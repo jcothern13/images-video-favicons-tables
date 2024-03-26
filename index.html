@@ -9,6 +9,8 @@
 
         <!-- A FAVICON -->
         <!-- TO DO: add the favicon here -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
         <!-- GOOGLE FONTS LINKS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,13 +128,21 @@
                     width.</p>
                     
                     <!-- TO DO: Add the video from the files below using HTML5 -->
+                    <video controls width="425">
+                        <source src="video/video.mp4" type="video/mp4">
+                        Your browser doesn't support this video format.
+                    </video>
 
                     <a href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/" class="credit">Video by Caleb Oquendo</a>
                 </section>
 
                 <section>
                     <h3><span>&#10033;&nbsp;</span> Adding Video From YouTube</h3>
-                    <p>Adding a video from YouTube is as simple as copying and pasting some code. YouTube videos include embed code under the share menu for each video. Once it is open, you can choose to set some options or just copy the code and paste it into your HTML. YouTube uses a tag called an <code>iframe</code> to hold their videos. These can render more than just videos, though, including an entire web page.</p>
+                    <p>Adding a video from YouTube is as simple as copying and pasting some code. YouTube 
+                    videos include embed code under the share menu for each video. Once it is open, you can 
+                    choose to set some options or just copy the code and paste it into your HTML. YouTube 
+                    uses a tag called an <code>iframe</code> to hold their videos. These can render more 
+                    than just videos, though, including an entire web page.</p>
                     <!-- This video can be found here: https://www.youtube.com/watch?v=k9DZp16uNQk&list=RDk9DZp16uNQk&start_radio=1 I did remove the autoplay and frameborder attributes from the given code -->
                     <iframe width="425" height="240" src="https://www.youtube.com/embed/k9DZp16uNQk" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </section>
@@ -140,14 +150,24 @@
 
             <section id="favicon">
                 <h2>Adding a Favicon to Your Web Page</h2>
-                <p>A favicon serves a lot of purposes, as you saw in our lecture today. You can find the original png that we will use to create our favicon inside of the images folder. You can easily convert it to a favicon file type on the <a href="https://www.favicon-generator.org/" target="_blank">Favicon Generator website</a>. Be sure to select to only generate the 16x16 favicon with the options below the file upload.</p>
+                <p>A favicon serves a lot of purposes, as you saw in our lecture today. You can find the 
+                original png that we will use to create our favicon inside of the images folder. You can 
+                easily convert it to a favicon file type on the 
+                <a href="https://www.favicon-generator.org/" target="_blank">Favicon Generator website</a>. 
+                Be sure to select to only generate the 16x16 favicon with the options below the file upload.</p>
                 <p>Please follow the instructions in class to get this working.</p>
             </section>
 
             <section id="svg">
                 <h2>Using SVGs in HTML</h2>
-                <p>There are a few ways that you can add an SVG to your page with HTML, and today we'll practice pasting their code directly into our HTML. You can also use a link to the file as the <code>src</code> for an image tag, but pasting the code allows us to do more with CSS later. Vector images are best for graphics, because they are defined with math, and will display perfectly at any size, which saves time when they load on the page.</p>
-                <p>We are going to paste an SVG icon for Facebook into the footer below to practice this. Notice that I have added an <code>aria-label</code> attribute to the links wrapped around those icons. It is used when there isn't any link text, like when you wrap a link around the image.</p>
+                <p>There are a few ways that you can add an SVG to your page with HTML, and today we'll 
+                practice pasting their code directly into our HTML. You can also use a link to the file as 
+                the <code>src</code> for an image tag, but pasting the code allows us to do more with CSS later. 
+                Vector images are best for graphics, because they are defined with math, and will display 
+                perfectly at any size, which saves time when they load on the page.</p>
+                <p>We are going to paste an SVG icon for Facebook into the footer below to practice this. Notice 
+                that I have added an <code>aria-label</code> attribute to the links wrapped around those icons. 
+                It is used when there isn't any link text, like when you wrap a link around the image.</p>
             </section>
 
             <section id="table">
@@ -155,7 +175,7 @@
                 <p>In HTML, tables are used for tabular data. Think of data similar to a schedule or what you might find easier to read in a spreadsheet format. Tables can cause issues on smaller screens, as they aren't responsive, so consider that if you add them to a page. If they will be small enough to fit on the screen, even with their data, you should be fine.</p>
                 <table>
                     <!-- TO DO: Complete the code below to create a caption for this table -->
-                    Hours of Operation
+                    <caption>Hours of Operation</caption>
 
                     <thead>
                         <tr>
@@ -176,7 +196,7 @@
 
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell that will span all columns -->
-                        <!-- Wednesday - <span class="bold">Closed</span> -->
+                        <td colspan="2">Wednesday - <span class="bold">Closed</span></td> 
                     </tr>
 
                     <tr>
@@ -197,7 +217,8 @@
 
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell containing that text -->
-                        <!-- Sunday -->
+                        <td>Sunday</td>
+                        
                     </tr>
                 </table>
             </section>
@@ -210,6 +231,10 @@
 
                 <a href="#" aria-label="find us on facebook">
                     <!-- TO DO: go to the tabler icons site, search for the icon for Facebook, and copy and paste the SVG code below -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
                 </a>
                 
                 <a href="#" aria-label="find us on instagram">
